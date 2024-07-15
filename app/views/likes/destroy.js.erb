@@ -1,3 +1,6 @@
+console.log("Test Destroy")
+
+
 var old_like_content = $("#<%= dom_id(@like.photo) %>_likes");
 var new_like_content = $("<%= j(render partial: 'photos/likes', locals: { photo: @like.photo }) %>");
 
